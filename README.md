@@ -1,11 +1,15 @@
-### AIM: 
+# EXP 5 : SPEECH RECOGNITION USING SCILAB
+
+## AIM: 
 
 To perform and verify speech recognition using SCILAB. 
 
-### APPARATUS REQUIRED: 
+## APPARATUS REQUIRED: 
 PC installed with SCILAB. 
 
-### PROGRAM : 
+## PROGRAM : 
+
+//  SPEECH RECOGNITION USING SCILAB
 ```
 //  SPEECH RECOGNITION USING SCILAB
 clc;
@@ -15,8 +19,8 @@ close;
 disp("Loading audio files...");
 
 // Read reference and test voice files
-[y1, fs1] = wavread("C:\Users\acer\Downloads\referrence.wav");
-[y2, fs2] = wavread("C:\Users\acer\Downloads\test.wav");
+[y1, fs1] = wavread("C:\Users\admin\Downloads\sine_wave.wav");
+[y2, fs2] = wavread("C:\Users\admin\Downloads\test_wave.wav");
 
 // Check sampling rates
 if fs1 <> fs2 then
@@ -72,14 +76,11 @@ ylabel("Amplitude");
 legend(["Reference", "Test"]);
 
 disp("Waveforms plotted successfully. Close the graph window manually to finish.");
-
 ```
+## OUTPUT: 
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/328ea45e-378e-45b0-871a-4dabd8dca752" />
+<img width="1917" height="1078" alt="image" src="https://github.com/user-attachments/assets/3a255b29-633e-4da3-8a08-77fb28094659" />
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/2f166d3d-9ece-484a-a7f9-e780aa29f419" />
 
-### OUTPUT: 
-<img width="905" height="577" alt="image" src="https://github.com/user-attachments/assets/8acffbfe-f052-4029-a209-6fe57e8f29b4" />
-<img width="760" height="600" alt="image" src="https://github.com/user-attachments/assets/f43f8351-e268-4bf4-803c-255111bf5cff" />
-<img width="762" height="600" alt="image" src="https://github.com/user-attachments/assets/a1981565-0b3f-4f53-a8d3-0271e15f25c1" />
-
-
-### RESULT: 
+## RESULT: 
 Thus the speech recognition using SCILAB was performed and verified.
